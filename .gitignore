@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+ai-agents-super/
+12-assp/
+build/
+dist/
+coverage/
+
+# Plugin zip artifacts
+*.zip
+
+# 3rd party WP plugins (not user code)
+fluent-cart/
+fluent-crm/
+
+# Env
+.env*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

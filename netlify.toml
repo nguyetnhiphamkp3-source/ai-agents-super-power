@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "12-assp"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

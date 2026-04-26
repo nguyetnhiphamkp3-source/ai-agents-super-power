@@ -17,7 +17,7 @@ export default defineConfig({
       },
     },
   ],
-  base: '/12-assp/',
+  base: '/',
   build: {
     outDir: '12-assp',
   },

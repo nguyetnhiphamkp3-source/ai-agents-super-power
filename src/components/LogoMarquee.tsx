@@ -1,10 +1,6 @@
 import React from 'react';
 
-const LOGOS: string[] = Array.from({ length: 24 }, (_, i) => {
-  const num = i + 1;
-  const ext = num === 1 ? 'webp' : 'png';
-  return `logo${num}.${ext}`;
-});
+const LOGOS: string[] = Array.from({ length: 24 }, (_, i) => `logo${i + 1}.webp`);
 
 function LogoItem({ src }: { src: string }) {
   return (

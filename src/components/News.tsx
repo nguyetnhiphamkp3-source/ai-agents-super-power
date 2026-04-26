@@ -30,19 +30,19 @@ export default function News() {
   return (
     <section className="bg-white section-padding" id="news">
       <div className="container-padding">
-        <h2 className="font-display uppercase text-[30px] md:text-[62px] leading-tight text-black text-center mb-10 md:mb-14">
+        <h2 className="font-display uppercase text-[30px] md:text-[62px] leading-tight text-black text-center mb-6">
           Góc báo chí
         </h2>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-black/10">
+          <div className="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 md:gap-0 -mx-5 px-5 md:mx-0 md:px-0 pb-3 md:pb-0 scrollbar-hide md:divide-x divide-black/10">
             {ARTICLES.map((a) => (
               <a
                 key={a.url}
                 href={a.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col py-8 md:py-0 md:px-8"
+                className="group flex flex-col flex-shrink-0 w-[85%] md:w-auto snap-center md:py-0 md:px-8"
               >
                 <img
                   src={a.image}

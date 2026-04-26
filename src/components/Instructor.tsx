@@ -64,7 +64,7 @@ export default function Instructor() {
           </p>
         </div>
 
-        <FeedbackInline image="fb33.png" />
+        <FeedbackInline image="fb33.webp" />
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-[36px] md:text-[96px] font-display mb-6 md:mb-8 leading-[1.1] tracking-tight mx-auto w-full max-w-[1100px] text-white drop-shadow-md">
+        <h1 className="text-[34px] md:text-[96px] font-display mb-6 md:mb-8 leading-[1.1] tracking-tight mx-auto w-full max-w-[1100px] text-white drop-shadow-md text-balance">
           BẠN RẤT GIỎI NGHỀ CỦA MÌNH... NHƯNG TÀI KHOẢN NGÂN HÀNG LẠI ĐANG "PHẢN BỘI" NĂNG LỰC ĐÓ?
         </h1>
         

@@ -18,7 +18,7 @@ const DAYS: Day[] = [
     overlay: 'TINH GỌN TƯ DUY',
     styleNote: 'warm sunset / morning vibe',
     imagePlaceholder: 'Hình founder ngồi suy ngẫm bên biển hoặc cửa sổ',
-    image: 'hieu-khach-hang-nhu-hieu-minh.png',
+    image: 'hieu-khach-hang-nhu-hieu-minh.webp',
     title: 'Hiểu Khách Hàng Như Hiểu Mình',
     intro: 'Bạn sẽ kích hoạt 2 agent đầu tiên:',
     agents: [
@@ -33,7 +33,7 @@ const DAYS: Day[] = [
     overlay: 'THIẾT KẾ HỆ THỐNG',
     styleNote: 'focused workspace / desk',
     imagePlaceholder: 'Hình founder vẽ sơ đồ trên giấy / ngồi trước laptop',
-    image: 'thiet-ke-offer-va-pheu-ban-hang.png',
+    image: 'thiet-ke-offer-va-pheu-ban-hang.webp',
     title: 'Thiết Kế Offer Và Phễu Bán Hàng',
     intro: 'Bạn kích hoạt thêm 4 agent:',
     agents: [
@@ -50,7 +50,7 @@ const DAYS: Day[] = [
     overlay: 'CHẠY THỰC CHIẾN',
     styleNote: 'dynamic / energy / conference',
     imagePlaceholder: 'Hình founder thuyết trình hoặc ngồi trước dashboard có biểu đồ',
-    image: 'van-hanh-va-do-luong.png',
+    image: 'van-hanh-va-do-luong.webp',
     title: 'Vận Hành Và Đo Lường',
     intro: 'Bạn kích hoạt 6 agent còn lại:',
     agents: [
@@ -70,11 +70,11 @@ export default function Roadmap3Days() {
   return (
     <section className="bg-[#f4f4f4] section-padding" id="roadmap-3-days">
       <div className="max-w-7xl mx-auto container-padding">
-        <div className="max-w-[920px] mx-auto text-center mb-10 md:mb-14">
-          <h2 className="section-title font-display leading-tight text-black mb-5 md:mb-8">
+        <div className="max-w-[920px] mx-auto text-center mb-6">
+          <h2 className="section-title font-display leading-tight text-black mb-3">
             LỘ TRÌNH 3 NGÀY ĐỂ HỆ THỐNG VẬN HÀNH
           </h2>
-          <p className="text-base md:text-[27px] leading-relaxed text-black">
+          <p className="text-base md:text-[27px] leading-relaxed text-black text-balance">
             Sau khi đăng ký, đây là những gì bạn sẽ làm trong 3 ngày tới:
           </p>
         </div>

@@ -51,7 +51,7 @@ export default function Benefits() {
               1 AGENT = 1 KỸ NĂNG CHUYÊN SÂU (Skill) = <mark className="bg-[#FFF700] text-black px-2 font-bold">HIỆU SUẤT CỦA 5-10 CON NGƯỜI CỘNG LẠI</mark>.
             </p>
 
-            <FeedbackInline image="fb22.jpeg" />
+            <FeedbackInline image="fb22.webp" />
 
             <p>
               Bạn không cần phải <span className="underline underline-offset-4 font-semibold">mất thời gian học cách viết "Prompt" (câu lệnh) phức tạp</span> hay <span className="underline underline-offset-4 font-semibold">đau đầu dạy dỗ con máy mỗi ngày</span>. Chúng tôi đã <mark className="bg-[#FFF700] text-black px-2 font-bold">huấn luyện sẵn những "lính tinh nhuệ"</mark> này cho bạn. Việc duy nhất bạn cần làm là <mark className="bg-[#FFF700] text-black px-2 font-bold uppercase">kích hoạt và sử dụng ngay lập tức!</mark>

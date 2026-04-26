@@ -50,8 +50,8 @@ export default function Pricing() {
   return (
     <section className="bg-white section-padding" id="pricing">
       <div className="max-w-7xl mx-auto container-padding text-left">
-        <div className="max-w-[680px] mx-auto mb-12 md:mb-16">
-          <h2 className="section-title text-center font-display leading-tight mb-6 md:mb-8 uppercase text-black">
+        <div className="max-w-[680px] mx-auto mb-6">
+          <h2 className="section-title text-center font-display leading-tight mb-3 uppercase text-black">
             GIỜ G ĐÃ ĐẾN. HÃY CHỌN "TRỢ LÝ" PHÙ HỢP VỚI BẠN
           </h2>
           <div className="text-base md:text-[24px] leading-relaxed text-black text-center">
@@ -78,14 +78,13 @@ export default function Pricing() {
               )}
               
               <div className="mb-[10px] text-center">
-                <div className="text-[22px] md:text-[28px] font-display uppercase text-black mb-2 flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-center leading-tight">
+                <div className="text-[28px] md:text-[34px] font-display uppercase text-black mb-2 flex flex-col items-center justify-center gap-1 text-center leading-tight">
                   <span>{plan.name}</span>
-                  <span className="hidden md:inline">—</span>
                   <span>{plan.price}</span>
                 </div>
               </div>
 
-              <div className="text-[16px] font-normal text-black mb-8 pb-6 border-b border-gray-200 min-h-[80px] text-center not-italic">
+              <div className="text-[16px] font-normal text-black mb-8 pb-6 border-b border-gray-200 min-h-[80px] text-center not-italic text-balance">
                 {plan.target}
               </div>
 
@@ -130,8 +129,8 @@ export default function Pricing() {
           ))}
         </div>
 
-        <FeedbackInline image="fb31.jpeg" />
-        <FeedbackInline image="fb32.png" />
+        <FeedbackInline image="fb31.webp" />
+        <FeedbackInline image="fb32.webp" />
 
         <div className="mt-16 max-w-[900px] mx-auto text-center text-base md:text-[20px] text-black italic">
           Lưu ý: Tất cả các gói đều là mức giá ưu đãi dành cho 200 khách hàng đầu tiên. Hãy chọn gói phù hợp và nâng cấp hiệu suất doanh nghiệp của bạn ngay bây giờ!

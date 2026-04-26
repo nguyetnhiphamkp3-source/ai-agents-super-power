@@ -125,8 +125,8 @@ const FAQ: React.FC = () => {
             ))}
           </div>
 
-          <FeedbackInline image="fb40.png" />
-          <FeedbackInline image="fb37.png" />
+          <FeedbackInline image="fb40.webp" />
+          <FeedbackInline image="fb37.webp" />
         </div>
       </div>
     </section>

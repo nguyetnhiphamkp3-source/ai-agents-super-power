@@ -16,11 +16,11 @@ export default function WhoIsThisFor() {
   return (
     <section className="bg-white section-padding" id="who-is-this-for">
       <div className="max-w-7xl mx-auto container-padding">
-        <div className="content-width mx-auto text-center mb-10 md:mb-14">
-          <h2 className="section-title font-display leading-tight text-black mb-5 md:mb-8">
+        <div className="content-width mx-auto text-center mb-6">
+          <h2 className="section-title font-display leading-tight text-black mb-3">
             HỆ THỐNG NÀY DÀNH CHO AI?
           </h2>
-          <p className="text-base md:text-[27px] leading-relaxed text-black">
+          <p className="text-base md:text-[27px] leading-relaxed text-black text-balance">
             Nếu bạn gật đầu với bất kỳ câu hỏi nào dưới đây — thì <mark className="bg-[#FFF700] text-black px-2 font-bold">12 AI Agent</mark> là lựa chọn hoàn hảo dành cho bạn.
           </p>
         </div>

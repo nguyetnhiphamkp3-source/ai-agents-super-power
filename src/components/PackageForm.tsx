@@ -270,16 +270,16 @@ export default function PackageForm() {
       </video>
 
       <div className="relative z-10 max-w-4xl mx-auto px-3 md:px-8">
-        <div className="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 md:p-10 border border-gray-100">
-          <div className="text-center mb-3 md:mb-5">
-            <h2 className="text-[30px] md:text-[60px] font-display uppercase text-black mb-[8px] leading-tight">ĐĂNG KÝ SỞ HỮU HỆ THỐNG AI AGENT</h2>
+        <div className="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-4 py-[30px] md:p-10 border border-gray-100">
+          <div className="text-center mb-2 md:mb-3">
+            <h2 className="text-[30px] md:text-[60px] font-display uppercase text-black leading-tight">ĐĂNG KÝ SỞ HỮU HỆ THỐNG AI AGENT</h2>
           </div>
 
           {paymentStatus === 'idle' && (
           <>
             {/* ─── Hero Value Card: Cost Comparison + Benefits ─── */}
             <div className="mb-6 md:mb-10 space-y-4 md:space-y-5">
-              <p className="!font-sans text-center text-sm md:text-base text-black max-w-2xl mx-auto leading-snug">
+              <p className="!font-sans text-center text-[16px] md:text-[22px] text-black mx-auto leading-snug text-balance md:whitespace-nowrap">
                 Bạn định trả bao nhiêu lương cho bộ máy cồng kềnh này mỗi tháng?
               </p>
 
@@ -331,22 +331,30 @@ export default function PackageForm() {
                 </div>
               </div>
 
-              {/* Benefits — 4 columns */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {/* Benefits — 2x2 with cross divider on mobile, 4 columns with vertical dividers on desktop */}
+              <div className="grid grid-cols-2 md:grid-cols-4">
                 {[
                   { Icon: PiggyBank, title: 'Tiết kiệm 99%', desc: 'Cắt bỏ quỹ lương hàng tháng' },
                   { Icon: Clock, title: 'Làm việc 24/7', desc: 'Không nghỉ, không ốm, không tăng lương' },
                   { Icon: ShieldCheck, title: 'Bảo mật tuyệt đối', desc: 'Không lộ bí mật kinh doanh' },
                   { Icon: Zap, title: 'Hiệu suất tức thì', desc: 'Xử lý trong vài phút' },
-                ].map((b) => (
-                  <div key={b.title} className="bg-white border border-black/10 rounded-xl p-3 md:p-4 flex flex-col items-center text-center">
-                    <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#f9f5ff] text-[#6500b9] flex items-center justify-center mb-2">
-                      <b.Icon className="w-4 h-4 md:w-5 md:h-5" strokeWidth={2.2} />
+                ].map((b, i) => {
+                  const isLeftCol = i % 2 === 0;
+                  const isTopRow = i < 2;
+                  const mobileBorder = `${isLeftCol ? 'border-r border-black/10 md:border-r-0' : ''} ${isTopRow ? 'border-b border-black/10 md:border-b-0' : ''}`;
+                  const desktopBorder = i > 0 ? 'md:border-l md:border-black/10' : '';
+                  return (
+                    <div key={b.title} className={`flex md:flex-col items-start md:items-center gap-2.5 md:gap-0 py-3 md:py-2 ${isLeftCol ? 'pr-3' : 'pl-3'} md:px-4 md:text-center ${mobileBorder} ${desktopBorder}`}>
+                      <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#f9f5ff] text-[#6500b9] flex items-center justify-center flex-shrink-0 md:mb-2">
+                        <b.Icon className="w-4 h-4 md:w-5 md:h-5" strokeWidth={2.2} />
+                      </div>
+                      <div className="flex-1 md:flex-none">
+                        <p className="!font-sans font-bold text-[14px] md:text-sm text-black leading-snug">{b.title}</p>
+                        <p className="!font-sans text-[12px] md:text-xs text-black leading-snug mt-0.5 md:mt-1">{b.desc}</p>
+                      </div>
                     </div>
-                    <p className="!font-sans font-bold text-xs md:text-sm text-black leading-snug">{b.title}</p>
-                    <p className="!font-sans text-[11px] md:text-xs text-black leading-snug mt-1">{b.desc}</p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
@@ -450,22 +458,47 @@ export default function PackageForm() {
                           onChange={handleChange}
                           className="sr-only"
                         />
-                        <div className="flex justify-between items-start mb-2">
-                          <span className={`!font-sans text-lg md:text-xl font-bold leading-snug ${isSelected ? 'text-white' : 'text-black'}`}>
-                            {pkg.name}
-                          </span>
-                          {isSelected && (
-                            <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                              <Check className="w-4 h-4 text-[#6500b9]" strokeWidth={3} />
-                            </div>
-                          )}
+                        {/* Mobile: name + price on same row, desc below */}
+                        <div className="md:hidden flex justify-between items-start gap-3">
+                          <div className="flex-1 min-w-0">
+                            <p className={`!font-sans text-lg font-bold leading-snug ${isSelected ? 'text-white' : 'text-black'}`}>
+                              {pkg.name}
+                            </p>
+                            <p className={`!font-sans text-sm mt-1 ${isSelected ? 'text-white' : 'text-black'}`}>
+                              {pkg.desc}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            <span className={`!font-sans text-xl font-bold whitespace-nowrap leading-snug ${isSelected ? 'text-white' : 'text-black'}`}>
+                              {pkg.price}
+                            </span>
+                            {isSelected && (
+                              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
+                                <Check className="w-4 h-4 text-[#6500b9]" strokeWidth={3} />
+                              </div>
+                            )}
+                          </div>
                         </div>
-                        <span className={`!font-sans text-sm md:text-base mb-4 ${isSelected ? 'text-white' : 'text-black'}`}>
-                          {pkg.desc}
-                        </span>
-                        <span className={`!font-sans text-2xl md:text-3xl font-bold mt-auto ${isSelected ? 'text-white' : 'text-black'}`}>
-                          {pkg.price}
-                        </span>
+
+                        {/* Desktop: stacked layout */}
+                        <div className="hidden md:flex md:flex-col md:flex-1">
+                          <div className="flex justify-between items-start mb-2">
+                            <span className={`!font-sans text-xl font-bold leading-snug ${isSelected ? 'text-white' : 'text-black'}`}>
+                              {pkg.name}
+                            </span>
+                            {isSelected && (
+                              <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
+                                <Check className="w-4 h-4 text-[#6500b9]" strokeWidth={3} />
+                              </div>
+                            )}
+                          </div>
+                          <span className={`!font-sans text-base mb-4 ${isSelected ? 'text-white' : 'text-black'}`}>
+                            {pkg.desc}
+                          </span>
+                          <span className={`!font-sans text-3xl font-bold mt-auto ${isSelected ? 'text-white' : 'text-black'}`}>
+                            {pkg.price}
+                          </span>
+                        </div>
                       </label>
                     );
                   })}

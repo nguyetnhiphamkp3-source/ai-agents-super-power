@@ -45,7 +45,7 @@ export default function FounderMessage() {
               </p>
             </div>
 
-            <FeedbackInline image="fb34.png" />
+            <FeedbackInline image="fb34.webp" />
 
             <div className="pt-0 flex justify-center">
               <a

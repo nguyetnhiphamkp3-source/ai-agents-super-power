@@ -32,18 +32,12 @@ function MarqueeRow({
   return (
     <div className="flex overflow-hidden">
       <div
-        className={`flex flex-shrink-0 ${reverse ? 'animate-marquee-reverse' : 'animate-marquee'}`}
+        className={`flex flex-shrink-0 ${reverse ? 'animate-marquee-loop-reverse' : 'animate-marquee-loop'}`}
         style={{ animationDuration: speed }}
       >
         {logos.map((logo) => (
           <LogoItem key={logo} src={logo} />
         ))}
-      </div>
-      <div
-        className={`flex flex-shrink-0 ${reverse ? 'animate-marquee-reverse' : 'animate-marquee'}`}
-        aria-hidden="true"
-        style={{ animationDuration: speed }}
-      >
         {logos.map((logo) => (
           <LogoItem key={`dup-${logo}`} src={logo} />
         ))}

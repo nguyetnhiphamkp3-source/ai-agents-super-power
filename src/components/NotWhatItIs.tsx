@@ -18,7 +18,7 @@ export default function NotWhatItIs() {
 
         <div className="text-center mb-8 md:mb-12">
           <img
-            src={`${import.meta.env.BASE_URL}lung-may-sayno.png`}
+            src={`${import.meta.env.BASE_URL}lung-may-sayno.webp`}
             alt="Say no"
             className="w-full max-w-[860px] h-auto mx-auto"
             referrerPolicy="no-referrer"
@@ -46,7 +46,7 @@ export default function NotWhatItIs() {
 
             <div className="mb-6 md:mb-8">
               <img
-                src={`${import.meta.env.BASE_URL}12-file.jpg`}
+                src={`${import.meta.env.BASE_URL}12-file.webp`}
                 alt="12 file markdown"
                 className="w-full h-auto mx-auto rounded-xl"
                 referrerPolicy="no-referrer"

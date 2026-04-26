@@ -31,7 +31,7 @@ export default function Rejection() {
             </p>
           </div>
 
-          <FeedbackInline image="fb9.jpg" />
+          <FeedbackInline image="fb9.webp" />
         </div>
       </div>
     </section>

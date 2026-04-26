@@ -28,7 +28,7 @@ export default function FinalWarning() {
             <p>
               Đừng để doanh nghiệp của mình bị tụt lại phía sau trong khi đối thủ đã bắt đầu sử dụng AI để <mark className="bg-[#FFF700] text-black px-2 font-bold">chiếm lĩnh thị trường</mark>.
             </p>
-            <FeedbackInline image="fb36.png" />
+            <FeedbackInline image="fb36.webp" />
             <p className="font-bold">
               Cơ hội để sở hữu hệ thống với mức giá ưu đãi đang khép lại rất nhanh. Hãy quyết định ngay bây giờ để giải phóng sức lao động và tối ưu dòng tiền của bạn!
             </p>

@@ -56,7 +56,7 @@ export default function Problem() {
             </li>
           </ul>
 
-          <FeedbackInline image="fb38.png" />
+          <FeedbackInline image="fb38.webp" />
 
           <div className="space-y-6 md:space-y-10 text-base md:text-[27px] leading-relaxed">
             <p>
@@ -79,7 +79,7 @@ export default function Problem() {
               Đủ rồi. Dừng lại đi!
             </p>
 
-            <FeedbackInline image="fb30.jpeg" />
+            <FeedbackInline image="fb30.webp" />
 
             <p>
               Marketing không tạo ra tiền tươi thóc thật thì chỉ là <span className="underline decoration-primary decoration-2 underline-offset-4">trò đốt tiền mua vui</span>.

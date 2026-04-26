@@ -18,7 +18,7 @@ export default function Journey() {
               Năm 2012, tôi làm một việc mà ai cũng bảo là điên rồ: Rời bỏ giảng đường đại học để lao vào nền tảng Affiliate Network đầu tiên tại Việt Nam. Đó là nơi tôi nếm những cái tát đầu đời và học được bài học mà không một giáo sư nào dạy bạn: <mark className="bg-[#FFF700] text-black px-2 font-bold">Nếu không tạo ra chuyển đổi, bạn sẽ chết đói</mark>.
             </p>
             <img
-              src={`${import.meta.env.BASE_URL}kp3-1.png`}
+              src={`${import.meta.env.BASE_URL}kp3-1.webp`}
               alt="KP3"
               className="w-full max-w-[560px] h-auto mx-auto block"
             />
@@ -46,7 +46,7 @@ export default function Journey() {
               className="block w-full max-w-[560px] mx-auto transition-transform duration-300 hover:-translate-y-2"
             >
               <img
-                src={`${import.meta.env.BASE_URL}ladipage-2017.png`}
+                src={`${import.meta.env.BASE_URL}ladipage-2017.webp`}
                 alt="Đối tác chiến lược LadiPage từ năm 2017"
                 className="w-full h-auto block"
               />
@@ -73,7 +73,7 @@ export default function Journey() {
             <p>
               Nhưng để có được vị thế ngày hôm nay, tôi đã phải trả giá bằng <span className="highlight">hơn 20 lần thất bại đau đớn</span> và hàng đống tiền <span className="underline underline-offset-4 font-semibold">quăng qua cửa sổ</span> cho những cuộc "thử nghiệm Ads" và tuyển nhân sự mới vô định. Tôi đã từng phát điên khi nhìn các nhân sự Marketing công ty mình ngồi ngáp ngắn ngáp dài, trong khi mình phải <mark className="bg-[#FFF700] text-black px-2 font-bold">tự "cắt máu" gánh lỗ</mark>.
             </p>
-            <FeedbackInline image="fb28.jpeg" />
+            <FeedbackInline image="fb28.webp" />
             <p className="italic font-semibold">Một thời gian sau…</p>
             <p>
               Tôi không xây dựng một đội ngũ làm thuê — tôi xây dựng một <span className="font-bold">HỆ THỐNG TỰ VẬN HÀNH</span>.
@@ -101,7 +101,7 @@ export default function Journey() {
             <p>
               Giờ đây, tôi mang tất cả những bài học xương máu từ các dự án triệu đô đó gói gọn vào giải pháp này cho bạn. Bạn muốn tiếp tục làm "nô lệ" cho chính công ty mình, hay muốn sở hữu một hệ thống AI Agent tự hành giúp bạn <mark className="bg-[#FFF700] text-black px-2 font-bold">giải phóng hoàn toàn sức lao động</mark>?
             </p>
-            <FeedbackInline image="fb25.jpeg" />
+            <FeedbackInline image="fb25.webp" />
           </div>
         </div>
 
